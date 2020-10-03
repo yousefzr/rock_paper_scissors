@@ -59,14 +59,14 @@ function game () {
     }
 
     if (playerScore > computerScore) {
-        gameWinner = 'You Won!';
+        gameWinner = (`After 5 rounds you had ${playerScore} wins, and your opponent had ${computerScore} you have crushed the enemy and stand victorious!`);
     } else if (playerScore < computerScore) {
-        gameWinner = 'Sorry, You Lose, Computer Wins';
+        gameWinner = (`After 5 rounds you had ${playerScore} wins, and your opponent had ${computerScore} wins, the machines have won, you have failed the human race.`);
     } else {
         gameWinner = 'Yay! You both won';
     }
 
-    return gameWinner;
+    console.log(gameWinner);
 }
 
 game();
